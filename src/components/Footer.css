@@ -1,0 +1,108 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-tertiary);
+  border-top: 1px solid var(--border);
+  padding: 50px 0 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.footer-tagline {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-links h4,
+.footer-socials-section h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition-normal);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+}
+
+.footer-socials a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer-built {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heart {
+  animation: pulse-glow 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .footer-top { grid-template-columns: 1fr; gap: 30px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
