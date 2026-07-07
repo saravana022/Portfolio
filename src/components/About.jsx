@@ -1,4 +1,4 @@
-import profileImg from '../assets/profile.png'
+import profileImg from '../assets/new_profile.png'
 import './About.css'
 
 const stats = [
