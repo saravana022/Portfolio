@@ -75,6 +75,23 @@
   background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15), transparent 60%);
 }
 
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--primary);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
 .project-card:hover .project-thumbnail i {
   transform: scale(1.15) rotate(5deg);
   transition: transform 0.4s ease;
